@@ -7,7 +7,7 @@ $(document).ready(function(){
         $nav.toggleClass('collapse');
     })
 
-    // owl corousel object //
+    // owl corousel object 
     $('.owl-carousel').owlCarousel({
         loop:true,
         autoplay:false,
@@ -17,5 +17,11 @@ $(document).ready(function(){
         navText:[$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')]
     });
 
+    // click yo scroll top 
+    $('.move-up span').click(function (){
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);
+    })
 
 });
